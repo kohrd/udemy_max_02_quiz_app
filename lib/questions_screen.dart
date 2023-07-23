@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 class QuestionScreen extends StatefulWidget {
-  const QuestionScreen({super.key})
+  const QuestionScreen({super.key});
 
 
   @override
