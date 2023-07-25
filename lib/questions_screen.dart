@@ -15,11 +15,19 @@ class QuestionScreen extends StatefulWidget {
 }
 
 class _QuestionScreenState extends State<QuestionScreen> {
+  var currentQuestionIndex = 0;
 
+  void answerQuestionAndChangeScreenForNextQustion(){
+    // currentQuestionIndex = currentQuestionIndex + 1;
+    // lub currentQuestionIndex +=1;
+  setState(() {
+    currentQuestionIndex ++;
+  });
+  }
 
   @override
   Widget build(context) {
-    final currentQuestionFromList = questions[0]; // to jest cały zerowy obiekt z listy czyli pytanie i odpowiedzi
+    final currentQuestionFromList = questions[currentQuestionIndex]; // to jest cały zerowy obiekt z listy czyli pytanie i odpowiedzi
 
 
     return  SizedBox(
@@ -60,11 +68,15 @@ class _QuestionScreenState extends State<QuestionScreen> {
 
             metoda SHUFFLE miksuje osdpowiedzi zeby wlasciwanie wapadala na poczatku
 
-            
+
 
             */
             ...currentQuestionFromList.getShuffledAnswers().map((answersFromAnswersList) {
-                return AnswerButton(answerText: answersFromAnswersList, onTap: (){});
+                return AnswerButton(answerText: answersFromAnswersList, onTap: (){
+                  setState(answerQuestionAndChangeScreenForNextQustion);
+                }
+
+                );
 
             })
 
