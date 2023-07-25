@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quiz_app/answer_button.dart';
 import 'package:quiz_app/data/questions.dart';
+// import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+// import 'package:google_fonts/google_fonts.dart';
 
 import 'answer_button.dart';
 
@@ -43,7 +45,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
              Padding(
                padding: const EdgeInsets.symmetric(horizontal: 1.0),
                child: Text(currentQuestionFromList.text,
-                  style: const TextStyle(
+                  style:  const TextStyle(
+                      // https://pub.dev/packages/google_fonts
 
                       color: Colors.white60,
                       fontWeight: FontWeight.bold,

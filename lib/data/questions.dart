@@ -68,7 +68,7 @@ const questions = [
   QuizQuestion(
     'How should you update data inside of StatefulWidgets?',
     [
-      'By calling setState()',
+      'By calling se calling setState calling setState calling setState calling setState calling setState calling setStatetState()',
       'By calling updateData()',
       'By calling updateUI()',
       'By calling updateState()',
@@ -164,7 +164,7 @@ const questions = [
 
 
 
-  
+
 
 
 ];
