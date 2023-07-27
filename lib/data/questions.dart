@@ -1,6 +1,7 @@
 import  'package:quiz_app/models/quiz_question.dart';
 
 const questions = [
+  // TO JWST LISTA OBIEKTOW QuizQuestion KTORE SA MAPMI
   QuizQuestion(
     'What are the main building blocks of Flutter UIs?',
     [
@@ -8,13 +9,6 @@ const questions = [
       'Components',
       'Blocks',
       'Functions',
-
-      'Widdgets',
-      'Compodnents',
-      'Blockds',
-      'Funcdtions',
-
-
     ],
   ),
   QuizQuestion('How are Flutter UIs built?', [
@@ -59,112 +53,4 @@ const questions = [
       'By calling updateState()',
     ],
   ),
-
-
-
-
-
-
-  QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
-    [
-      'By calling se calling setState calling setState calling setState calling setState calling setState calling setStatetState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
-    ],
-  ),
-
-
-
-  QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
-    [
-      'By calling setState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
-    ],
-  ),
-
-
-  QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
-    [
-      'By calling setState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
-    ],
-  ),
-
-
-  QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
-    [
-      'By calling setState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
-    ],
-  ),
-
-
-  QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
-    [
-      'By calling setState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
-    ],
-  ),
-
-
-  QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
-    [
-      'By calling setState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
-    ],
-  ),
-
-
-  QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
-    [
-      'By calling setState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
-    ],
-  ),
-
-  QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
-    [
-      'By calling setState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
-    ],
-  ),
-
-  QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
-    [
-      'By calling setState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
-    ],
-  ),
-
-
-
-
-
-
 ];
