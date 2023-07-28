@@ -14,7 +14,7 @@ class ResultsScreen extends StatelessWidget {
     for(var i=0; i < chosenAnswer.length; i++ ){
       // ttuaj tworzymy jakas pusta mape (slownik)
       summary.add({'question_index': i,
-        'question': questions[i].text,
+        'question': questions[i].text,   //   lista z pytaniami nazywa sie questions i posiada obiekty typu QuizQuestion()
         'correct_answer': questions[i].answers[0],
         'user_answer': chosenAnswer[i]
       },
@@ -25,6 +25,13 @@ class ResultsScreen extends StatelessWidget {
 
   @override
   Widget build(context) {
+    final summaryData = getSummaryData();
+    final numberOfTotalQuestions = questions.length;
+    final numCorrectQuestions = summaryData.where((data){  // dodaje do listy jsli return zwraca true
+      return data['user_answer'] == data['correct_answer'];
+
+    }).length;
+
     return SizedBox(
       width: double.infinity,
       child: Container(
@@ -36,11 +43,12 @@ class ResultsScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           // rozciaga elementy w kolumnie w osi Cross
           children: [
-            const Text('You have answered X out of Y questions correctly'),
+             Text('You have answered $numCorrectQuestions out of $numberOfTotalQuestions questions correctly'),
             const SizedBox(height: 30,),
             const Text("List of answers and questions"),
             const SizedBox(height: 30),
-            QuestionsSummary(summaryData: getSummaryData()),
+            QuestionsSummary(summaryData: summaryData),
+            const SizedBox(height: 30),
             TextButton(onPressed: (){
             },
                 child: const Text("Restart quiz"))
