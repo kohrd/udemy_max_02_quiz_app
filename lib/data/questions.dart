@@ -1,7 +1,7 @@
 import  'package:quiz_app/models/quiz_question.dart';
 
 const questions = [
-  // TO JWST LISTA OBIEKTOW QuizQuestion KTORE SA MAPMI
+  // TO JWST LISTA OBIEKTOW QuizQuestion KTORE SA MAPMI a zasadzie stringiem i listą
   QuizQuestion(
     'What are the main building blocks of Flutter UIs?',
     [
